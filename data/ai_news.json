@@ -1,0 +1,23 @@
+[
+    {
+      "title": "OpenAI launches GPT-5",
+      "url": "https://openai.com/gpt5",
+      "description": "The newest generation of GPT is now live.",
+      "date": "2025-06-01",
+      "category": "LLMs"
+    },
+    {
+      "title": "Meta unveils LLaMA-4",
+      "url": "https://ai.meta.com",
+      "description": "Meta’s new model focuses on efficiency.",
+      "date": "2025-05-30",
+      "category": "LLMs"
+    },
+    {
+      "title": "Hugging Face releases Transformers 5.0",
+      "url": "https://huggingface.co/blog",
+      "description": "Transformers library receives major updates.",
+      "date": "2025-05-28",
+      "category": "Tools"
+    }
+  ]
