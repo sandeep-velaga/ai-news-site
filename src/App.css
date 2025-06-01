@@ -21,12 +21,11 @@ header .controls {
   flex-wrap: wrap;
 }
 
-header select,
 header input {
   padding: 0.5rem;
   border-radius: 6px;
   border: none;
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .news-list {

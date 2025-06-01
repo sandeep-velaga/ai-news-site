@@ -4,33 +4,20 @@ import './App.css';
 
 function App() {
   const [news, setNews] = useState([]);
-  const [category, setCategory] = useState('All');
   const [search, setSearch] = useState('');
-  const [clicks, setClicks] = useState(() => {
-    return parseInt(localStorage.getItem('linkedinClicks')) || 0;
-  });
 
   useEffect(() => {
-    fetch('/data/ai_news.json')
+    fetch('/ai-news-site/data/ai_news.json')
       .then(res => res.json())
       .then(data => setNews(data));
   }, []);
 
-  const handleLinkedInClick = () => {
-    const updatedClicks = clicks + 1;
-    setClicks(updatedClicks);
-    localStorage.setItem('linkedinClicks', updatedClicks);
-  };
-
   const filteredNews = news
-    .filter(item => category === 'All' || item.category === category)
     .filter(item =>
       item.title.toLowerCase().includes(search.toLowerCase()) ||
       item.description.toLowerCase().includes(search.toLowerCase())
     )
     .slice(0, 3);
-
-  const uniqueCategories = ['All', ...new Set(news.map(n => n.category))];
 
   return (
     <div className="App">
@@ -42,17 +29,11 @@ function App() {
             href="https://www.linkedin.com/in/sandeep-velaga-04080219b/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleLinkedInClick}
           >
-            <FaLinkedin size={20} style={{ verticalAlign: 'middle' }} /> LinkedIn ({clicks})
+            <FaLinkedin size={20} style={{ verticalAlign: 'middle' }} /> LinkedIn
           </a>
         </p>
         <div className="controls">
-          <select value={category} onChange={(e) => setCategory(e.target.value)}>
-            {uniqueCategories.map((cat, i) => (
-              <option key={i} value={cat}>{cat}</option>
-            ))}
-          </select>
           <input
             type="text"
             placeholder="Search news..."
@@ -81,9 +62,8 @@ function App() {
             href="https://www.linkedin.com/in/sandeep-velaga-04080219b/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={handleLinkedInClick}
           >
-            <FaLinkedin size={20} style={{ verticalAlign: 'middle' }} /> LinkedIn ({clicks})
+            <FaLinkedin size={20} style={{ verticalAlign: 'middle' }} /> LinkedIn
           </a>
         </p>
       </footer>
