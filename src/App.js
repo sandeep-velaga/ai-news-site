@@ -23,16 +23,6 @@ function App() {
     <div className="App">
       <header>
         <h1>🧠 Top AI News</h1>
-        <p>
-          Curated by Sandeep |{' '}
-          <a
-            href="https://www.linkedin.com/in/sandeep-velaga-04080219b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={20} style={{ verticalAlign: 'middle' }} /> LinkedIn
-          </a>
-        </p>
         <div className="controls">
           <input
             type="text"

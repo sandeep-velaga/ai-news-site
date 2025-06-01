@@ -19,5 +19,26 @@
       "description": "Transformers library receives major updates.",
       "date": "2025-05-28",
       "category": "Tools"
+    },
+    {
+      "title": "Anthropic introduces Claude 3.5",
+      "url": "https://www.anthropic.com/index/claude-3-5",
+      "description": "Anthropic's Claude 3.5 outperforms GPT-4 in reasoning benchmarks.",
+      "date": "2025-05-27",
+      "category": "LLMs"
+    },
+    {
+      "title": "Google Gemini adds offline support",
+      "url": "https://deepmind.google/technologies/gemini",
+      "description": "Gemini now runs on-device for Android flagship phones.",
+      "date": "2025-05-25",
+      "category": "Tools"
+    },
+    {
+      "title": "Cohere launches Command R+",
+      "url": "https://cohere.ai/blog/command-r-plus",
+      "description": "New model optimized for retrieval-augmented generation (RAG) tasks.",
+      "date": "2025-05-24",
+      "category": "Models"
     }
   ]
