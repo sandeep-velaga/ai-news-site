@@ -40,12 +40,5 @@
       "description": "New model optimized for retrieval-augmented generation (RAG) tasks.",
       "date": "2025-05-24",
       "category": "Models"
-    },
-    {
-        "title": "Cohere launches Command R+",
-        "url": "https://cohere.ai/blog/command-r-plus",
-        "description": "New model optimized for retrieval-augmented generation (RAG) tasks.",
-        "date": "2025-05-24",
-        "category": "Models"
     }
   ]
