@@ -12,12 +12,10 @@ function App() {
       .then(data => setNews(data));
   }, []);
 
-  const filteredNews = news
-    .filter(item =>
-      item.title.toLowerCase().includes(search.toLowerCase()) ||
-      item.description.toLowerCase().includes(search.toLowerCase())
-    )
-    .slice(0, 3);
+  const filteredNews = news.filter(item =>
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.description.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="App">
